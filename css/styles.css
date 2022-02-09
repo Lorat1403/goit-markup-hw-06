@@ -713,18 +713,25 @@ body {
 
 .ft-form {
     display: flex;
-    /* width: 570px; */
-    /* height: 86px; */
+    width: 570px;
+    height: 86px;
     margin-left: 93px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.f-title {
+    margin-bottom: 20px;
 }
 
 .f-input {
     width: 358px;
     height: 50px;
-    background-color: #2f303a;
+    background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
     border-radius: 4px;
 }
 
@@ -741,6 +748,9 @@ body {
     letter-spacing: 0.06em;
     color: #ffffff;
 }
+
+
+/* modal window */
 
 .backdrop {
     position: fixed;
@@ -798,10 +808,9 @@ body {
     right: 8px;
 }
 
-
-/* .modal-close-btn:hover~.close-btn {
+.modal-close-btn:hover {
     fill: #2196f3;
-} */
+}
 
 .form-title {
     margin-bottom: 12px;
@@ -835,11 +844,10 @@ body {
     border-radius: 4px;
 }
 
-
-/* .modal-input:active,
-.modal-text:focus {
+.modal-text:focus,
+.modal-input:focus {
     border-color: #2196f3;
-} */
+}
 
 .modal-text::placeholder {
     font-size: 14px;
