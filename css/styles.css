@@ -918,7 +918,7 @@ body {
 .modal-check:checked+.check-label span {
     width: 16px;
     height: 15px;
-    background-image: url(/images/icon-check.svg);
+    background-image: url(../images/icon-check.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 8px;
@@ -935,7 +935,7 @@ body {
 .modal-icon-check {
     width: 16px;
     height: 15px;
-    background-image: url(/images/Vector-check.svg);
+    background-image: url(../images/Vector-check.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 8px;
