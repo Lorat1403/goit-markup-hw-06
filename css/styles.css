@@ -712,7 +712,7 @@ body {
 }
 
 .ft-form {
-    display: flex;
+    display: inline-block;
     width: 570px;
     height: 86px;
     margin-left: 93px;
@@ -733,6 +733,21 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     border-radius: 4px;
+    margin-right: 12px;
+    outline: none;
+}
+
+.f-input::placeholder {
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.f-input:focus {
+    color: #ffffff;
 }
 
 .f-btn {
@@ -747,6 +762,12 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
+}
+
+.ft-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 }
 
 
@@ -783,7 +804,7 @@ body {
     transform: translate(50%, 50%) rotate(-270deg);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -833,6 +854,18 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    outline: none;
+}
+
+.modal-wrap {
+    position: relative;
+}
+
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .modal-text {
@@ -842,11 +875,16 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    outline: none;
 }
 
 .modal-text:focus,
 .modal-input:focus {
-    border-color: #2196f3;
+    border-color: var(--second-lnk-color);
+}
+
+.modal-input:focus+.modal-icon {
+    fill: var(--second-lnk-color);
 }
 
 .modal-text::placeholder {
@@ -862,6 +900,45 @@ body {
     letter-spacing: 0.01em;
     color: #757575;
     margin-bottom: 4px;
+}
+
+.check-label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    display: flex;
+}
+
+.modal-check:checked .modal-icon-check {
+    display: none;
+}
+
+.check-link {
+    color: #2196f3;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.modal-icon-check {
+    margin-right: 8px;
+    display: block;
+}
+
+
+/* .check-label::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    background-image: url(./images/symbol-defs.svg#Vector-check);
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.check-field {
+    display: flex;
+    margin-bottom: 10px;
 }
 
 .modal-btn {
