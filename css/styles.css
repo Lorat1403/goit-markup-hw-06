@@ -911,7 +911,7 @@ body {
 }
 
 .modal-check:checked .modal-icon-check {
-    display: none;
+    visibility: hidden;
 }
 
 .check-link {
