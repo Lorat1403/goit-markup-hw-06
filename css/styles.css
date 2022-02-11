@@ -855,6 +855,7 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     outline: none;
+    padding-left: 40px;
 }
 
 .modal-wrap {
@@ -902,6 +903,10 @@ body {
     margin-bottom: 4px;
 }
 
+.modal-check {
+    position: absolute;
+}
+
 .check-label {
     font-size: 14px;
     line-height: 1.71;
@@ -910,8 +915,14 @@ body {
     display: flex;
 }
 
-.modal-check:checked .modal-icon-check {
-    visibility: hidden;
+.modal-check:checked+.check-label span {
+    width: 16px;
+    height: 15px;
+    background-image: url(/images/icon\ check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px;
+    display: block;
 }
 
 .check-link {
@@ -922,6 +933,11 @@ body {
 }
 
 .modal-icon-check {
+    width: 16px;
+    height: 15px;
+    background-image: url(/images/Vector-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     margin-right: 8px;
     display: block;
 }
